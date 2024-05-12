@@ -1,0 +1,10 @@
+{
+  "name": "Remove World Clocks",
+  "description": "GNOME shell extension to remove world clocks from the date menu",
+  "uuid": "remove-world-clocks@codemacabre.com",
+  "shell-version": [
+    "45",
+    "46"
+  ],
+  "url": "https://github.com/codemacabre/remove-world-clocks"
+}

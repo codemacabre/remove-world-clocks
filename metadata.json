@@ -4,7 +4,8 @@
   "uuid": "remove-world-clocks@codemacabre.com",
   "shell-version": [
     "45",
-    "46"
+    "46",
+    "47"
   ],
   "url": "https://github.com/codemacabre/remove-world-clocks"
 }

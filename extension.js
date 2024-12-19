@@ -1,8 +1,11 @@
+import * as Main from 'resource:///org/gnome/shell/ui/main.js';
+const DateMenu = Main.panel.statusArea.dateMenu
+
 export default class RemoveWorldClocks {
   #state = {};
 
   enable() {
-    const clocksItem = this._main.panel.statusArea.dateMenu._clocksItem;
+    const clocksItem = DateMenu._clocksItem;
 
     if (this.#state.clocksItemUpdate) {
       clocksItem._update = this.#state.clocksItemUpdate;
@@ -18,7 +21,7 @@ export default class RemoveWorldClocks {
   }
 
   disable() {
-    const clocksItem = this._main.panel.statusArea.dateMenu._clocksItem;
+    const clocksItem = DateMenu._clocksItem;
 
     if (!this.#state.clocksItemUpdate) {
       this.#state.clocksItemUpdate = clocksItem._update;
